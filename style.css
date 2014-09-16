@@ -1,0 +1,9 @@
+.winners{
+	display: inline-block;
+}
+span{
+	visibility: hidden;
+}
+.show{
+	visibility: visible;
+}

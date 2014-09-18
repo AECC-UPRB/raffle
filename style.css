@@ -1,9 +1,102 @@
-.winners{
-	display: inline-block;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    background-color: #fdfdfd;
+    color: rgba(20, 20, 20, 0.7);
 }
-span{
-	visibility: hidden;
+h1 {
+    font-size: 32px;
 }
-.show{
-	visibility: visible;
+ul {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    list-style: none;
 }
+ul > li {
+    margin: auto;
+    padding: 0;
+    display: inline;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+input[type="text"] {
+    border-radius: 5px;
+    width: 94%;
+    max-width: 94%;
+    margin: 0;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid rgba(200, 200, 200, 1);
+    font-size: 14px;
+    padding: 10px;
+}
+.winingNumber {
+    position: relative;
+    min-height: 1px;
+    margin-left: 4%;
+    margin-bottom: 3%;
+    padding: 10px 17px;
+    float: left;
+    font-size: 36px;
+    color: rgba(20, 20, 20, 0.8);
+    box-shadow: 0 0 2px rgba(200, 200, 200, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.form {
+    margin: auto;
+    padding: 15px;
+    width: 350px;
+    max-width: 100%;
+}
+.button {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgba(30, 30, 30, 0.8);
+    border-radius: 5px;
+    background-color: rgba(56, 214, 39, 0.8);
+    cursor: pointer;
+}
+.button:hover {
+    color: rgba(30, 30, 30, 0.7);
+    background-color: rgba(56, 214, 39, 1);
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
